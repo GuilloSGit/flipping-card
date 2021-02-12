@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 400px;
+}
+
+.card__content {
+    text-align: center;
+    position: relative;
+    padding: 5em;
+    transition: transform 3s;
+    background: pink;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+    transform: rotateY(.5turn);
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card__front {
+    background: linear-gradient(22deg, rgba(25, 65, 76, .8), rgba(25, 0, 0, 0) 70.71%), linear-gradient(2deg, rgba(0, 255, 0, 45), rgba(0, 250, 99, .8) 99.71%);
+}
+
+.card__title {
+    color: #fff;
+    font-size: 3rem;
+    transform: translateZ(6rem);
+}
+
+.card__subtitle {
+    color: #fff;
+    transform: translateZ(4rem);
+    font-size: larger;
+    font-weight: 500;
+}
+
+.card__body {
+    color: #FFF;
+    font-size: 1.8rem;
+    transform: translateZ(3rem);
+}
+
+.card__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    transform: rotateY(.5turn);
+    background: linear-gradient(22deg, rgba(25, 65, 76, .8), rgba(25, 0, 0, 0) 70.71%), linear-gradient(227deg, rgba(0, 250, 99, .8), rgba(0, 255, 0, 45) 99.71%);
+}
