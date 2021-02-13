@@ -7,20 +7,20 @@
 
 body {
     background-color: #000;
-    height: 100vh;
+    height: 80vh;
     display: grid;
     place-items: center;
 }
 
 .card {
     width: 400px;
+    margin: 15px;
 }
 
 .card__content {
     text-align: center;
-    position: relative;
-    padding: 5em;
-    transition: transform 3s;
+    padding: 15em;
+    transition: transform 2s;
     background: pink;
     transform-style: preserve-3d;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .card__front {
-    background: linear-gradient(22deg, rgba(25, 65, 76, .8), rgba(25, 0, 0, 0) 70.71%), linear-gradient(2deg, rgba(0, 255, 0, 45), rgba(0, 250, 99, .8) 99.71%);
+    background: linear-gradient(22deg, rgba(135, 164, 172, 0.8), rgba(66, 64, 64, 0) 70.71%), linear-gradient(2deg, rgb(66, 62, 117), rgba(67, 77, 71, 0.8) 99.71%);
 }
 
 .card__title {
@@ -70,5 +70,5 @@ body {
     align-items: center;
     font-size: larger;
     transform: rotateY(.5turn);
-    background: linear-gradient(22deg, rgba(25, 65, 76, .8), rgba(25, 0, 0, 0) 70.71%), linear-gradient(227deg, rgba(0, 250, 99, .8), rgba(0, 255, 0, 45) 99.71%);
+    background: linear-gradient(22deg, rgba(25, 65, 76, .8), rgba(25, 0, 0, 0) 70.71%), linear-gradient(227deg, rgba(36, 71, 87, 0.8), rgb(52, 53, 52) 99.71%);
 }
