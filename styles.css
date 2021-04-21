@@ -13,6 +13,10 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   margin: 15px;
 }
@@ -20,7 +24,7 @@ body {
 .card__content {
   text-align: center;
   padding: 15em;
-  transition: transform 2s;
+  transition: transform 5s;
   transform-style: preserve-3d;
   background-image: url(assets/ocean-final.jpg);
 }
