@@ -1,74 +1,73 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    background-color: #000;
-    height: 80vh;
-    display: grid;
-    place-items: center;
+  background-color: #000;
+  height: 80vh;
+  display: grid;
+  place-items: center;
 }
 
 .card {
-    width: 400px;
-    margin: 15px;
+  width: 400px;
+  margin: 15px;
 }
 
 .card__content {
-    text-align: center;
-    padding: 15em;
-    transition: transform 2s;
-    background: pink;
-    transform-style: preserve-3d;
+  text-align: center;
+  padding: 15em;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  background-image: url(assets/ocean-final.jpg);
 }
 
 .card:hover .card__content {
-    transform: rotateY(.5turn);
+  transform: rotateY(0.5turn);
 }
 
 .card__front,
 .card__back {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2em;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .card__front {
-    background: linear-gradient(22deg, rgba(135, 164, 172, 0.8), rgba(66, 64, 64, 0) 70.71%), linear-gradient(2deg, rgb(66, 62, 117), rgba(67, 77, 71, 0.8) 99.71%);
+  background-image: url(assets/ocean-apr27-2020-Cidy-Chai-North-Pacific-sq.jpeg);
 }
 
 .card__title {
-    color: #fff;
-    font-size: 3rem;
-    transform: translateZ(6rem);
+  color: #fff;
+  font-size: 3rem;
+  transform: translateZ(6rem);
 }
 
 .card__subtitle {
-    color: #fff;
-    transform: translateZ(4rem);
-    font-size: larger;
-    font-weight: 500;
+  color: #fff;
+  transform: translateZ(4rem);
+  font-size: larger;
+  font-weight: 500;
 }
 
 .card__body {
-    color: #FFF;
-    font-size: 1.8rem;
-    transform: translateZ(3rem);
+  color: #fff;
+  font-size: 1.8rem;
+  transform: translateZ(3rem);
 }
 
 .card__back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-    transform: rotateY(.5turn);
-    background: linear-gradient(22deg, rgba(25, 65, 76, .8), rgba(25, 0, 0, 0) 70.71%), linear-gradient(227deg, rgba(36, 71, 87, 0.8), rgb(52, 53, 52) 99.71%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  transform: rotateY(0.5turn);
 }
