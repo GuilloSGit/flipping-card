@@ -1,3 +1,7 @@
+:root{
+  --distancia-texto-tarjeta: translateZ(4rem);
+}
+
 *,
 *::before,
 *::after {
@@ -6,20 +10,44 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  height: 80vh;
+  background: radial-gradient(#000000,#050505);
+  height: 100vh;
   display: grid;
   place-items: center;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 400px;
   margin: 15px;
 }
+
+.card__title {
+  margin: 25px;
+  color: rgb(200, 205, 250);
+  font-size: 5rem;
+  transform:var(--distancia-texto-tarjeta)
+}
+
+.card__subtitle {
+  top: 35px;
+  color: rgb(151, 116, 195);
+  transform: var(--distancia-texto-tarjeta);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.card__body {
+  color: rgba(216, 141, 197, 0.63);
+  font-weight: 800;
+  font-size: 1.8rem;
+  transform: var(--distancia-texto-tarjeta);
+}
+
+.card__back {
+  font-size: larger;
+  transform: rotateY(0.5turn);
+}
+
 
 .card__content {
   text-align: center;
@@ -46,33 +74,5 @@ body {
 }
 
 .card__front {
-  background-image: url(assets/ocean-apr27-2020-Cidy-Chai-North-Pacific-sq.jpeg);
-}
-
-.card__title {
-  margin: 25px;
-  color: rgb(2, 12, 105);
-  font-size: 5rem;
-  transform: translateZ(4rem);
-}
-
-.card__subtitle {
-  top: 35px;
-  color: rgb(80, 9, 173);
-  text-rendering: geometricPrecision;
-  transform: translateZ(3rem);
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.card__body {
-  color: rgba(216, 141, 197, 0.63);
-  font-weight: 800;
-  font-size: 1.8rem;
-  transform: translateZ(3rem);
-}
-
-.card__back {
-  font-size: larger;
-  transform: rotateY(0.5turn);
+  background-image: url(assets/baseImagenOcean08.webp);
 }
